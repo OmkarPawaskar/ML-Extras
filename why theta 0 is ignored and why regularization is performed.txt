@@ -1,0 +1,21 @@
+It’s not that the bias term theta[1] is set to zero, it’s that it doesn’t contribute to the regularization correction.
+
+The equation for a straight line is usually written
+
+y = m x + by=mx+b
+
+where m is the slope and b is the y-intercept. This can be generalized to multiple dimensions as
+
+y = \Theta x + by=Tx+b
+
+where \ThetaT is a matrix and xx, yy, and bb are vectors. Here the \ThetaT elements are referred to as weights and bb as bias. Large weight values are associated with overfitting and large values of bias with underfitting.
+
+Remember in weeks 1 and 2 Prof Ng did a mathematical “trick” to aid vectorization. A dummy x_0x 
+0
+?	  element, always equal to 1, was added to xx and a corresponding \theta_0? 
+0
+?	  to \ThetaT. This removed the bb term from the formulas. The same thing can be done in neural networks where the dummy, always 1, elements are added to a^{(l)}a 
+(l)
+ . The new weights are often called bias terms or bias weights and the dummy elements bias units.
+
+The purpose of regularization is to reduce overfitting by making the weights smaller. Since large bias causes underfitting rather than overfitting, you don’t want to reduce the bias when you’re overfitting. For this reason the “bias term” weights don’t participate in regularization.

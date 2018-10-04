@@ -1,0 +1,10 @@
+ANN (Artificial Neural Networks) and SVM (Support Vector Machines) are two popular strategies for supervised machine learning and classification. 
+It's not often clear which method is better for a particular project, and I'm certain the answer is always "it depends."
+ Often, a combination of both along with Bayesian classification is used.
+
+In this question, I'd like to know specifically what aspects of an ANN (specifically, a Multilayer Perceptron) might make it desirable to use over an SVM? 
+The reason I ask is because it's easy to answer the opposite question: Support Vector Machines are often superior to ANNs because they avoid two major weaknesses of ANNs:
+
+(1) ANNs often converge on local minima rather than global minima, meaning that they are essentially "missing the big picture" sometimes (or missing the forest for the trees)
+
+(2) ANNs often overfit if training goes on too long, meaning that for any given pattern, an ANN might start to consider the noise as part of the pattern.
