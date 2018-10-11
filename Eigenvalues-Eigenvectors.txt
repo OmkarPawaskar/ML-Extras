@@ -1,0 +1,18 @@
+Eigenvalue/Eigenvectors - https://www.youtube.com/watch?v=PFDu9oVAE-g&list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab&t=0s&index=14
+
+Eigenvector - Vector that remains on its own span even after transformation.(axis of rotation)
+Av = Lv
+A-matrix,v-eigenvector,L(lambda)-eigenvalue
+now since it is matrix * vector on LHS and scalar * vector on RHS
+Av = LI*v - LI - scalar*Identity matrix
+so, (A- LI)v = 0
+ie det(A - LI) = 0
+Note - Only way it is possible for the product of matrix with a non-zero vector to become zero is if the transformation associated
+with that matrix sqishes space into lower dimension(PCA :D)
+
+Eigen Value = Characteristic Value of the transformation - which makes sense - Along some or all directions, the transformation scales by the characteristic value or values.
+Eigen Vectors = Characteristic Vectors of the transformation - the vectors that only get scaled and not rotated by a transformation, characteristic vectors are associated with a particular characteristic value.
+Together, the characteristic values and characteristic vectors show the properties (characteristics) of the transformation. 
+I think for any transformation with some characteristic values and the associated characteristic vectors, they help to classify or categorize a transformation. 
+Two different transformations can have the same characteristic values/vectors. 
+They tell us something about how similar two transformations are. E.g. If two transformations have the same characteristic vectors and different characteristic values, then perhaps they are scaled versions of each other.
